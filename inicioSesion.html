@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inicio sesión</title>
+</head>
+<body id="iniciosesion">
+    
+    <form action="" id="inicio-sesion">
+        <header>
+
+            <h1>WEBPICTURES</h1><br><br>
+            <h3>Inicia sesión</h3><br><br>
+    
+        </header>
+
+        <input id="email" class="datos" type="email" placeholder="Email">
+        <span id="email-error" class="error"></span>
+        <br><br><br>
+        <input id="contrasena" class="datos" type="password" placeholder="Contaseña">
+        <span id="contrasena-error" class="error"></span>
+        <br><br><br>
+        <input class="denvio" type="submit" value="Iniciar sesión" >
+
+        <div style="visibility: hidden;" id="enviado">
+
+            <label for="">Formulario enviado exitosamente</label>
+
+        </div>
+        
+        
+        <div class="olvido">
+            <a href="">¿Olvidaste la contraseña?</a>
+
+        </div>
+        
+        <br>
+        <input type="checkbox"><label for="">Recuérdame</label>
+        <a class="vinicio" href="/index.html"><h3>VOLVER AL INICIO</h3></a>
+
+    </form>
+    <script src="flogin.js"></script>
+    
+</body>
+</html>

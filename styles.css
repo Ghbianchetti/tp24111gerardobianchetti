@@ -41,7 +41,7 @@ body{
     margin: 0 auto;
 }
 
-.menu .logo
+.logo
 {
     font-weight: bold;
     font-size: 50px;
@@ -49,18 +49,6 @@ body{
     animation-duration: 4s;
     animation-name: slidein;
 }
-
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
 #menu{
     display: none;
@@ -76,13 +64,13 @@ body{
     width: 25px;
 }
 
-.menu .navbar ul
+.navbar ul
 {
     position: relative;
     display: flex;
 }   
 
-.menu .navbar ul li a
+.navbar ul li a
 {
     font-size: 30px;
     font-weight: bold; 
@@ -90,10 +78,22 @@ body{
     padding: 20px;
 }
 
-
-.menu .navbar ul li a:hover
+.navbar ul li a:hover
 {
     color: #FF2F27;
+}
+
+.btn-1
+{
+    display: inline-block;
+    color: white;
+    padding: 7px 20px;
+    background-color: #FF2F27;
+    font-size: 20px;
+    align-content: center;
+    border-radius: 5px;
+    margin-top: 10px;
+
 }
 
 .header-content{
@@ -114,6 +114,19 @@ body{
     width: 280px;
 
 }
+
+.btn-2{
+    display: inline-block;
+    width: 110px;
+    color: white;
+    padding: 7px 20px;
+    font-size: 20px;
+    background-color: #FF2F27;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
 .header-2
 {
     width: 50%;
@@ -132,41 +145,15 @@ body{
     width: 70px;
 }
 
-
-.btn-1
-
-{
-    display: inline-block;
-    color: white;
-    padding: 7px 20px;
-    background-color: #FF2F27;
-    font-size: 20px;
-    align-content: center;
-    border-radius: 5px;
-    margin-top: 10px;
-
-}
-.btn-2{
-    display: inline-block;
-    width: 110px;
-    color: white;
-    padding: 7px 20px;
-    font-size: 20px;
-    background-color: #FF2F27;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
 .movies{
     padding: 50px 0 0 0;
     display: flex;
     flex-direction: column;
 }
 
-h2
+.movies h2
 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px; ;
 }
 
@@ -190,10 +177,10 @@ hr{
 .box3{
     border-radius: 5px;
     z-index: 1000;
-    /* display: none; */
+    display:none;
 } 
 
-/* .box1:nth-child(1),
+.box1:nth-child(1),
 .box1:nth-child(2),
 .box1:nth-child(3),
 .box1:nth-child(4){
@@ -212,25 +199,7 @@ hr{
 .box3:nth-child(3),
 .box3:nth-child(4){
     display:inline-block;
-} */
-
-.load-more{
-    margin-top: 40px;
-    display: inline-block;
-    padding: 10px 25px;
-    border-radius: 15px;
-    border: 1px solid red;
-    color: red;
-    font-size: 16px;
-    cursor: pointer;
-    align-self: flex-end;
-}
-
-.load-more:hover
-{
-    background-color:#FF2F27;
-    color: white;
-}
+} 
 
 .content{
     font-size: 20px;
@@ -252,6 +221,24 @@ hr{
 .content h3{
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.load-more{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid red;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.load-more:hover
+{
+    background-color:#FF2F27;
+    color: white;
 }
 
 .footer
@@ -293,6 +280,21 @@ hr{
 .footer a:hover
 {
     color: #FF2F27;
+}
+
+
+/*MEDIAS QUERYES DEL INDEX*/
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
 }
 
 @media(max-width:991px){
@@ -364,6 +366,17 @@ hr{
         justify-content: center;
     }
 }
+/* COMIENZA CSS DE NOSOTROS*/
+
+
+
+/* COMIENZA EL CSS DE APPI-SERIES*/
+
+#series p{
+    font-size:15px;
+    color: #970000;
+}
+
 
 
 
@@ -473,7 +486,35 @@ hr{
     font-size: 0.7em;
 }
 
-#body-series,
+
+
+/*CSS DE SERIES-APPI*/
+
+.button{
+    text-align: center;
+}
+
+.button input{
+    padding: 10px;
+    margin-right: 60px;
+    width: 300px;
+    border-radius: 20px;
+    background-color:#970000 ;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 #body-nosotros
 {
     padding:10% 5%;
@@ -485,13 +526,25 @@ hr{
     font-size: 45px;
 }
 
-#body-series a,
-#body-nosotros a
+#iniciosesion a{
+   
+    text-align: center;
+    
+    
+}
+
+.vinicio h3{
+   margin-top: 50px;
+}
+
+
+#body-nosotros a,
+.vinicio
 {
     color:#FF2F27;
 }
 
-#body-series a h3,
+
 #body-nosotros a h3,
 #body-contacto a h3
 {
@@ -527,22 +580,140 @@ hr{
         justify-content: center;
         
     } 
+  
+}
+
+
+#inicio-sesion a p{
+    text-align: center;
+}
+
+#inicio-sesion h1
+{
+    color: #970000;
+}
+
+
+.datos,
+.denvio
+{
+    /* width: 100%;
+    height: 40px; */
+    border: transparent;
+    width: 100%;
+    height: 35px;
+
+    padding: 7px;
+    background-color: #030303;
+    color: rgb(255, 255, 255);
+    /* border: 0.1px white solid; */
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.datos{
+    border: solid 0.5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+
+
+.denvio{
+    background-color:#970000;
+    height:35px;
+}
+
+.denvio:hover{
+    padding: 10px;
+    height: 95%;
+    cursor: pointer;
     
+    
+}
+
+#iniciosesion 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
         
+}
+#inicio-sesion{
+    width: 30%  ;
 }
 
 
 
 
+.inicio-sesion a
+{
+    
+    color: white;
+}
 
+.inicio-sesion h3{
+    font-size: 20px;
+}
 
+.olvido a{
+    color: white;
+}
 
+.olvido,label
+{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    
+}
 
+[type="checkbox"]{
+    margin-right: 5px;
+}
 
+.inicio-sesion label{
+    font-size: 12px;
+    
+}
 
+span{
+    
+    color: red;
+    font-size: 12px;
+}
 
+#enviado{
+    margin-top: 10px;
+    color:white;
+    text-align: center;
+    
+    visibility:hidden;
+    /* width: 100%; */
+    
+}
 
+#enviado label{
+    
+    font-size:1.5em;
+}
 
+#avisaContrasena{
+    color: white;
+    /* visibility: hidden; */
+    
+}
 
+#contrasena:hover #avisaContrasena{
+    visibility: visible;
+}
+
+#box1
+{
+    display: inline-block;
+    
+
+}
 
 
